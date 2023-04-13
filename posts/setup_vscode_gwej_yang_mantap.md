@@ -73,7 +73,7 @@ Gue mau VS Code gue lebih clean lagi dan lagi, cuma ini ga gua sarinin buat lo p
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
 ```
 
-nah settingan itu semua bisa lo ganti di *settings.json*. Selanjut nya gue mau bahas tema sama font yang gue pake. Gue sering banget ganti-ganti tema dan font sampe akhir nya ga ngoding ngoding, cuma sekarang gue udah lebih nyaman sama teman dan font yang gue pake.
+nah settingan itu semua bisa lo ganti di *settings.json*. Selanjut nya gue mau bahas tema sama font yang gue pake. Gue sering banget ganti-ganti tema dan font sampe akhir nya ga ngoding-ngoding, cuma sekarang gue udah lebih nyaman sama tema dan font yang gue pake.
 
 ![](/posts/img/setup-vscode.PNG)
 
