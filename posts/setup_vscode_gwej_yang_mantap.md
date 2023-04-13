@@ -1,0 +1,108 @@
+---
+title: Setup VS Code Gwej Yang Mantap
+description: Kali ini Gue mau bahasa setup VS Code mulai dari extension, tema, font dll
+author: Riyon Aryono
+date: 2023-04-13T06:53:31.353Z
+preview: /posts/img/setup-vscode.PNG
+tags:
+  - vscode
+categories:
+  - ngoding
+  - tech
+  - coding
+slug: setup-vscode-gwej-yang-mantap
+keywords:
+  - vscode
+---
+
+Kali ini Gue mau ngebahas setup VS Code Gue, mulai dari tema, font, extension dll. Gue pake si VS Code ini mulai dari pertengahan tahun 2019 sebelum itu gue pake editor lain mulai dari sublime, atom, brackets, notepad++ dan akhir nya gue berenti di VS Code. Oke Langsung ke settingan VS Code gue
+
+## No Default
+beberapa settingan default dari VS Code bakal gua hilangin mulai dari preview, whitespace dll.
+```
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+```
+## Buat Tempat Kerja Lo Makin Luas
+Minimap itu gaguna banget buat apa coba lo scroll kodingan yang ga bisa lo liat, oleh karena itu gua ilangin. Gue juga jarang pake aktivitas bar gue lebih sering pake shortcut dan jarang pake mouse.
+
+```
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showTabs": false,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+```
+
+## Buat Lebih Clean Lagi
+Gue mau VS Code gue lebih clean lagi dan lagi, cuma ini ga gua sarinin buat lo pake semua. Lo bisa coba satu satu dulu biar ga kaget banyak hal yang ilang di VS Code lo
+
+```
+    "breadcrumbs.enabled": false,
+    "scm.diffDecorations": "none",
+    "editor.hover.enabled": false,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": false,
+    "editor.colorDecorators": false,
+    "git.decorations.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": false,
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": false,
+    "problems.decorations.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+```
+
+nah settingan itu semua bisa lo ganti di *settings.json*. Selanjut nya gue mau bahas tema sama font yang gue pake. Gue sering banget ganti-ganti tema dan font sampe akhir nya ga ngoding ngoding, cuma sekarang gue udah lebih nyaman sama teman dan font yang gue pake.
+
+![](/posts/img/setup-vscode.PNG)
+
+Gue pake tema Material Deep Ocean untuk font gue pake font Fira Code, gue juga aktifin font ligatures gue biar lebih mantap lagi. Lo bisa liat setinggan yang gue pake dibawah ini
+
+```
+    "workbench.colorTheme": "Material Deep Ocean",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 35,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontLigatures": true,
+```
+
+## Pake extension biar hidup lo lebih mudah
+VS Code itu berat, serius!!!. Dari beberapa text editor yang pernah gue pake VS Code itu berat, tapi kenapa tetep gue pake? salah satu nya karena extension yang dikasih dari VS Code itu banyak dan gampang banget buat diinstall. Problem nya kalo lo kebanyakan pake extension yang ga guna guna banget ya VS Code lu nambah makin berat, jadi pake lah extension sesuai sama kebutuhan ngoding lo. Disini gua mau ngasih tau beberapa extension yang gue pake.
+
+- Auto Close Tag
+- Auto Rename Tag
+- C/C++
+- Code Runner
+- GO
+- JavaScript (ES6)
+- Laravel Blade Snippets
+- Live Server
+- Prettier
+- Open in browser
+- Front Matter CMS
+- ES7+ React/Redux/React-Native snippets
+- EditorConfig for VS Code
+
+Nah itu tadi pembahasan soal settingan VS Code gue, gue harap sih lo ga ngikutin semua settinganya. Dan Yaudah gitu aja.
