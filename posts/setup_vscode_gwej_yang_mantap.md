@@ -35,7 +35,7 @@ beberapa settingan default dari VS Code bakal gua hilangin mulai dari preview, w
 
 ```
 ## Buat Tempat Kerja Lo Makin Luas
-Minimap itu gaguna banget buat apa coba lo scroll kodingan yang ga bisa lo liat, oleh karena itu gua ilangin. Gue juga jarang pake aktivitas bar gue lebih sering pake shortcut dan jarang pake mouse.
+Minimap itu gaguna banget buat apa coba lo scroll kodingan yang ga bisa lo liat, oleh karena itu gua ilangin. Gue juga jarang pake aktivitas bar, gue lebih sering pake shortcut, dan jarang pake mouse.
 
 ```
     "workbench.statusBar.visible": false,
@@ -77,7 +77,7 @@ nah settingan itu semua bisa lo ganti di *settings.json*. Selanjut nya gue mau b
 
 ![](/posts/img/setup-vscode.PNG)
 
-Gue pake tema Material Deep Ocean untuk font gue pake font Fira Code, gue juga aktifin font ligatures gue biar lebih mantap lagi. Lo bisa liat setinggan yang gue pake dibawah ini
+Gue pake tema Material Deep Ocean, dan untuk font gue pake font Fira Code. Gue juga aktifin font ligatures  biar VS Code gue lebih mantap lagi. Lo bisa liat setinggan yang gue pake dibawah ini
 
 ```
     "workbench.colorTheme": "Material Deep Ocean",
