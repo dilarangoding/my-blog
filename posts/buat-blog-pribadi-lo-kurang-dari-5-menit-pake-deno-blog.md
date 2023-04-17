@@ -117,7 +117,7 @@ Kustom Konfigurasi
 
 ![](posts/img/pic-7-deno-custom.png)
 
-Lo bisa Kustom konfigurasi bawan Deno Blog sesuka sama apa  yang lo mau, contoh nya gue ubah title, tema, author dll lo juga bisa custom style, link dan section. Disini gue custom section footer untuk kode nya lo bisa cek dibawah
+Lo bisa Kustom konfigurasi bawan Deno Blog sesuai sama apa  yang lo mau, contoh nya gue ubah title, tema, author dll lo juga bisa custom style, link dan section. Disini gue custom section footer untuk kode nya lo bisa cek dibawah
 
 **File main.tsx**
 ```javascript
@@ -251,7 +251,7 @@ Setelah Konfigurasi di atas selesai, website lo sudah bisa lo akses dan orang la
 
 ![](/posts/img/pic-9-dash-project.png)
 
-Lo juga bisa custom domain punya lo sendiri dengan syarat lo udah beli domain dulu. Cara nya lo pergi ke menu settings lalu scroll ke bawah sampai nemu section domain setelah itu lo klik button Add Domain, lo akan diminta untuk mengubah DNS Records setelah diubah jangan lupa klik validate
+Lo juga bisa custom domain punya lo sendiri dengan syarat lo udah beli domain dulu. Cara nya lo pergi ke menu settings lalu scroll ke bawah sampai nemu section domain setelah itu lo klik button Add Domain, lo akan diminta untuk mengubah DNS Records dari domain bawaan lo. Setelah diubah jangan lupa klik validate
 
 ![](/posts/img/pic-10-custom-domain.png)
 
