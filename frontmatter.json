@@ -22,8 +22,8 @@
           "type": "string"
         },
         {
-          "title": "date",
-          "name": "date",
+          "title": "publish_date",
+          "name": "publish_date",
           "type": "datetime"
         },
         {
@@ -51,7 +51,7 @@
           "name": "keywords",
           "type": "choice",
           "choices": [
-            "vscode"
+
           ]
         }
       ]

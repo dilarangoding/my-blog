@@ -2,7 +2,7 @@
 title: Setup VS Code Gwej Yang Mantap
 description: Kali ini Gue mau bahasa setup VS Code mulai dari extension, tema, font dll
 author: Riyon Aryono
-date: 2023-04-13T06:53:31.353Z
+publish_date: 2023-04-14
 preview: /posts/img/setup-vscode.PNG
 tags:
   - vscode
