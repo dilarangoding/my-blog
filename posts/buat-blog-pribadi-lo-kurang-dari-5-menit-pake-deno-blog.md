@@ -64,7 +64,6 @@ Hal yang paling gue suka dari Deno Blog adalah struktur folder yang simpel. Lo c
 ![](/posts/img/pic-4-struktur-file-deno.png)
 
 Sekarang, mari kita pahami masing-masing file di atas:
-Penjelasan gue soal file-file di Deno udah bener.
 
 - **deno.jsonc**: Ini adalah file yang digunakan untuk menambahkan tugas dan mengimpor file ImportMap. Dalam tugas ini, lo bisa menentukan berbagai hal seperti port yang digunakan untuk menjalankan server, dan sebagainya. ImportMap digunakan untuk mengimpor semua paket atau modul yang dibutuhkan oleh proyek Deno lo.
 - **import_map.json**: File ini berisi daftar modul dan paket yang diperlukan oleh proyek lo. Deno akan menggunakan ImportMap untuk mengimpor paket-paket ini saat proyek dijalankan.
