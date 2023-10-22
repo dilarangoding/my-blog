@@ -15,7 +15,7 @@ keywords:
   - buat static blog
 slug: buat-blog-pribadi-lo-kurang-dari-5-menit-pake-deno-blog
 ---
-Suatu hari gue lagi ngulik Node.Js terus gue nemu repo punyanya si bapak Ryan Dahl yang ngebuat si Node.Js ini, nah beliau nyantumin link website diakun github nya dan pas gue klik gue langsung tertarik mau buat juga. Diartikel ini gue ga bahas si Node.JS melainkan Deno.JS  kita akan ngebuat static makdown blog Deno lalu deploy ke server punya nya si Deno yaitu Deno Deploy dan itu GRATIS!!!
+Suatu hari, gue lagi ngulik Node.Js, terus gue nemu repo punyanya si bapak Ryan Dahl yang ngebuat si Node.Js ini. Nah, beliau nyantumin link website di akun GitHubnya, dan pas gue klik, gue langsung tertarik buat juga. Di artikel ini, gue gak bahas si Node.JS, melainkan Deno.JS. Kita bakal ngebuat static markdown blog pake Deno, lalu deploy ke server punya Deno sendiri, yaitu Deno Deploy, dan itu GRATIS!
 
 *btw node itu kalo dibalik jadi deno
 
@@ -32,26 +32,26 @@ Daftar Isi
 - [Deploy Blog Lo Biar Orang Lain Bisa Liat](#deploy-blog-lo-biar-orang-lain-bisa-liat)
 
 ## Install Dulu Deno ke Mesin Komputer Lo
-Hal yang harus dilakukan pertama kali adalah install deno ke laptop/dekstop lo cara nya cukup mudah
+Hal pertama yang lo harus lakuin adalah install Deno di laptop/dekstop lo. Caranya cukup gampang.
 
-Untuk windows lo bisa ketikan perintah berikut di CMD/PowerSheel
+Buat pengguna Windows, lo bisa ketik perintah berikut di CMD/PowerShell:
 ```cmd
 irm https://deno.land/install.ps1 | iex
 ```
 
-untuk MacOs dan Linux bisa ketikan perintah ini di terminal
+Sementara buat pengguna MacOs dan Linux, lo bisa ketik perintah ini di terminal:
 ```cmd
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
-nah tunggu beberapa saat. Untuk mengecek apakah deno sudah terinstall dimesin lo bisa ketikan perintah ini
+Nah, tinggal lo tunggu sebentar. Buat ngecek apakah Deno udah terinstall di mesin lo, lo bisa ketik perintah ini:
 
 ![](/posts/img/pic-2-deno-version.png)
 
-Kalo muncul seperti gambar di atas berarti deno sudah terinstall di mesin komputer lo.
+Kalo muncul seperti gambar di atas, berarti Deno udah terinstall di mesin komputer lo.
 
 ## Install dan Setup Blog
-Setalah lo install Deno di mesin lo sekarang lo juga perlu install Deno Blog Module. Lo bisa ketikan perintah berikut
+Setelah lo install Deno di mesin lo, sekarang lo juga perlu install modul Deno Blog. Lo bisa ketik perintah berikut:
 ```cmd
 deno run -r --allow-read --allow-write https://deno.land/x/blog/init.ts tulisin-nama-blog-lo/
 ```
@@ -63,25 +63,29 @@ Hal yang paling gue suka dari Deno Blog adalah struktur folder yang simpel. Lo c
 
 ![](/posts/img/pic-4-struktur-file-deno.png)
 
-Oke sekarang kita pahamin dari setiap file diatas
-- deno.jsonc: file ini untuk menambahakn task dan mengimport file ImportMap
-- import_map.json: file ini digunakan untuk mengimport semua package dari Deno untuk ngejalanin project lo
-- Posts: di folder ini nanti nya akan berisi file file artikel lo yang ekstensi nya .md atau markdown file
-- main.tsx: ini adalah file yang berisi untuk  semua konfigurasi dari blog lo
+Sekarang, mari kita pahami masing-masing file di atas:
+Penjelasan gue soal file-file di Deno udah bener.
+
+- **deno.jsonc**: Ini adalah file yang digunakan untuk menambahkan tugas dan mengimpor file ImportMap. Dalam tugas ini, lo bisa menentukan berbagai hal seperti port yang digunakan untuk menjalankan server, dan sebagainya. ImportMap digunakan untuk mengimpor semua paket atau modul yang dibutuhkan oleh proyek Deno lo.
+- **import_map.json**: File ini berisi daftar modul dan paket yang diperlukan oleh proyek lo. Deno akan menggunakan ImportMap untuk mengimpor paket-paket ini saat proyek dijalankan.
+- **Posts**: Ini adalah folder tempat lo akan menyimpan semua artikel blog lo dalam format file markdown (.md). Setiap artikel blog akan menjadi file terpisah dalam folder ini.
+- **main.tsx**: File ini berisi semua konfigurasi untuk blog lo. Di dalamnya, lo dapat mengatur judul blog, deskripsi, tema, avatar, dan berbagai pengaturan lainnya yang berkaitan dengan penampilan dan perilaku blog lo.
 
 ## Jalanin Deno Blog di Komputer Lokal
-Sekarang lo bisa ngejalanin blog di komputer lokal lo dengan cara ketikan perintah berikut
+Sekarang, lo bisa ngejalanin blog di komputer lokal lo dengan cara ketik perintah berikut:
 ```cmd
 deno task dev
 ```
 ![](/posts/img/pic-5-deno-run.png)
 
-Setelah ngejalanin perintah diatas lo bisa akses http://localhost:8000/ dan tampilanya akan  seperti ini
+Setelah menjalankan perintah di atas, lo bisa mengakses blog lo secara lokal melalui http://localhost:8000/ dan tampilannya akan seperti ini:
 
 ![](/posts/img/pic-6-priview-deno-loca.png)
 
+Dengan menjalankan perintah di atas, lo dapat menguji dan melihat tampilan blog lo secara lokal sebelum mendeploynya ke server Deno.
+
 ## Konfigurasi Tambahan ke Dalam Blog Lo
-Lo bisa ganti konfigurasi bawaan dari deno blog. Untuk default konfigurasi dari deno blog seperti ini
+Lo bisa ganti konfigurasi bawaan dari Deno Blog sesuai dengan keinginan lo. Konfigurasi default dari Deno Blog seperti berikut:
 ```javascript
 /** @jsx h */
 
@@ -117,7 +121,7 @@ Kustom Konfigurasi
 
 ![](posts/img/pic-7-deno-custom.png)
 
-Lo bisa Kustom konfigurasi bawan Deno Blog sesuai sama apa  yang lo mau, contoh nya gue ubah title, tema, author dll lo juga bisa custom style, link dan section. Disini gue custom section footer untuk kode nya lo bisa cek dibawah
+Lo dapat menyesuaikan konfigurasi ini dengan mengganti nilai-nilai seperti title, description, avatar, dan lainnya sesuai dengan preferensi lo. Lo juga bisa menambahkan kode kustom di dalamnya untuk mengatur penampilan blog lo lebih lanjut. Misalnya:
 
 **File main.tsx**
 ```javascript
@@ -146,7 +150,7 @@ blog({
   });
 ```
 
-Untuk custom section footer nya pertama lo buat folder Components/Footer.jsx, dan ini untuk kode nya
+Untuk custom section footer, pertama lo buat folder Components kalau belum ada, lalu di dalam folder tersebut lo buat file Footer.jsx dengan kode berikut:
 ```javascript
 /** @jsx h */
 import { h } from "blog";
@@ -200,7 +204,7 @@ export  function Footer() {
 }
 ```
 
-Untuk post artikel karena kita menggunakan blog markdown maka untuk ngebuat artikel lo harus menggunakan ekstensi .md. Struktur dari markdown nya seperti ini
+Untuk membuat artikel menggunakan format Markdown dalam proyek Deno Blog, Lo perlu mengikuti struktur yang sesuai dengan format front matter (metadata) dan konten artikel. Berikut adalah contoh struktur artikel dalam format Markdown:
 
 ![](/posts/img/struktur.png)
 
@@ -220,42 +224,42 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ```
 
-Nah untuk title, publish_date, dan description wajib tercantum di field markdown file lo
+Penting untuk dicatat bahwa elemen-elemen seperti judul (title), tanggal publikasi (publish_date), dan deskripsi (description) harus selalu disertakan dalam file Markdown lo
 
 ## Deploy Blog Lo Biar Orang Lain Bisa Liat
-Nah setelah hal itu semua selesai kita lakukan sekarang waktu nya deploy blog lo ke Deno, yang gue suka dari Deno deploy mereka ngasih spesifikasi yang lebih dari cukup dan GRATIS!. Untuk deploy blog lo ke Deno, lo harus ngebuat akun di [Deno Deploy](https://deno.com/deploy) dan buat akun github untuk nantinya Deno Deploy connect ke repo blog lo
+Sekarang, setelah semua langkah tersebut selesai, saatnya untuk mendeploy blog lo ke Deno. Salah satu hal yang gue suka tentang Deno Deploy adalah bahwa mereka menyediakan spesifikasi yang sangat baik dan yang terpenting, itu GRATIS! Untuk mendeploy blog lo ke Deno Deploy, lo harus membuat akun di [Deno Deploy](https://deno.com/deploy) dan juga pastikan lo punya akun GitHub. Ini diperlukan agar Deno Deploy dapat terhubung ke repository blog lo.
 
 ### Login Deno Deploy
-Pertama, lo pergi ke [Deno Deploy](https://deno.com/deploy) kalo lo belum buat akun silahkan lo buat terlebih dahulu kalau sudah silahkan langsung login ke akun Deno Deploy lo
+Langkah pertama, lo kunjungi [Deno Deploy](https://deno.com/deploy). Jika lo belum punya akun, silakan lo buat akun terlebih dahulu. Jika sudah memiliki akun, langsung saja login ke akun Deno Deploy lo
 
 ![](/posts/img/pic-8-step-0.png)
 
 ### Buat Project Baru
-Setelah login lo akan diarahkan ke dalam Deno dashboard. Lo bisa klik button new project
+Setelah login, lo akan diarahkan ke dashboard Deno. Di sana, lo bisa klik tombol 'New Project'.
 
 ![](/posts/img/step-1.png)
 
 ### Konfigurasi repo github
-Setelah lo klik new project lo akan diarakah untuk konfigurasi repo github dan environment variable
+Setelah lo mengklik 'New Project', lo akan diarahkan ke langkah konfigurasi yang melibatkan pengaturan repo GitHub dan variabel lingkungan (environment variable).
 
 ![](/posts/img/step-2.png)
 
-1. Pilih Repo github dari project blog lo
-2. Steleh lo pilih repo, pilih branch dan pilih file main.tsx
-3. Buat nama project lo pastikan nama project kecil semua dan pake (-) kalau lebih dari satu kata
-4. Click add env variable dan tambah envoirment (opsional)
-5. Terakhir klik button link dan tunggu proses nya sampai selesai
+1. Pilih repo GitHub dari proyek blog lo.
+2. Setelah lo memilih repo, pilih branch yang sesuai, dan pilih file `main.tsx`.
+3. Beri nama proyek lo, pastikan nama proyek menggunakan huruf kecil dan pisahkan kata dengan tanda "-" jika terdiri dari lebih dari satu kata.
+4. Klik "Add Environment Variable" dan tambahkan variabel lingkungan (opsional).
+5. Terakhir, klik tombol "Link" dan tunggu hingga proses selesai.
 
 ### Website Lo Sudah Publish!
-Setelah Konfigurasi di atas selesai, website lo sudah bisa lo akses dan orang lain akses untuk mengecek nya lo bisa klik button view diatas kanan
+Setelah menyelesaikan konfigurasi di atas, website lo sudah dapat diakses, dan orang lain juga dapat mengaksesnya untuk memeriksanya. Lo cukup klik tombol 'View' di bagian atas kanan.
 
 ![](/posts/img/pic-9-dash-project.png)
 
-Lo juga bisa custom domain punya lo sendiri dengan syarat lo udah beli domain dulu. Cara nya lo pergi ke menu settings lalu scroll ke bawah sampai nemu section domain setelah itu lo klik button Add Domain, lo akan diminta untuk mengubah DNS Records dari domain bawaan lo. Setelah diubah jangan lupa klik validate
+Lo juga bisa menyesuaikan domain milik lo sendiri, asalkan lo sudah membeli domain tersebut terlebih dahulu. Caranya, pergi ke menu 'Settings,' lalu scrol ke bawah hingga menemukan bagian 'Domain.' Setelah itu, klik tombol 'Add Domain.' Lo akan diminta untuk mengubah DNS record dari domain yang lo miliki. Setelah lo mengubahnya, jangan lupa untuk mengklik 'Validate'.
 
 ![](/posts/img/pic-10-custom-domain.png)
 
-Selamat blog lo sudah publish. Oh iya buat lo yang pake teks editor VS Code gue ada tips buat lo. Lo bisa pake Ekstension [FrontMatter](https://frontmatter.codes/docs) buat mempermudah saat lo bikin markdown file. Dan yaudah gitu aja.
+Selamat, blog lo sudah dipublikasikan! Oh, juga buat lo yang menggunakan teks editor VS Code, gue punya tip buat lo. Lo bisa menggunakan ekstensi [FrontMatter](https://frontmatter.codes/docs) untuk mempermudah saat lo membuat file Markdown. Dan yaudah gitu aja.
 
 #### Refrensi Bacaan Buat Blog Lo
 - [Deno Deploy](https://deno.com/deploy)
